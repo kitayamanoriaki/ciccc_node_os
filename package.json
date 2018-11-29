@@ -1,0 +1,23 @@
+{
+  "name": "ciccc_node_os",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kitayamanoriaki/ciccc_node_os.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kitayamanoriaki/ciccc_node_os/issues"
+  },
+  "homepage": "https://github.com/kitayamanoriaki/ciccc_node_os#readme",
+  "dependencies": {
+    "os": "^0.1.1"
+  }
+}
