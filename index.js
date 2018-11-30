@@ -2,8 +2,8 @@ const http = require("http");
 const os = require("os");
 const PORT = 5012
 
-http.createServer(
-    //callback
+const server = http.createServer(
+    
     (request, response) => {
     response.writeHead(200, {'Content-Type': 'text/plain'});
     response.end("-- CPU --\n"
@@ -12,9 +12,7 @@ http.createServer(
     +os.arch()+"\n"
     +"--- PLATFORM ---\n"
     +os.platform());
-    
-}).listen(5012);
 
+}).listen(PORT);
 
-// Console will print the message
 console.log(`Server running at http://127.0.0.1:${PORT}/`);
