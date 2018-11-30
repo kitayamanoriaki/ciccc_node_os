@@ -3,15 +3,22 @@ const os = require("os");
 const PORT = 5012
 
 const server = http.createServer(
-    
+
     (request, response) => {
+
+    // Properties inside of HTTP Headers
     response.writeHead(200, {'Content-Type': 'text/plain'});
-    response.end("-- CPU --\n"
+
+    // Show the output
+    response.write("-- CPU --\n"
     +JSON.stringify(os.cpus())+"\n"
     +"--- ARCHITECTURE ---\n"
     +os.arch()+"\n"
     +"--- PLATFORM ---\n"
     +os.platform());
+
+    // Let server know sending data has done!
+    response.end();
 
 }).listen(PORT);
 
